@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+.newModal{
+    font-family: "Droid Sans", arial, verdana, sans-serif;
+    background:#333;
+    color:#ff6;
+    height: 200px;
+} 
+.titleEpisode{
+    text-align: center;
+    font-size:30px;
+}
+#contentEffect  {  
+    position: absolute;  
+    width: 95%;  
+    height: 100%;  
+    bottom: 0;  
+    font-size: 20px;  
+    font-weight: bold;  
+    text-align: justify;  
+    overflow: hidden;  
+    transform-origin: 50% 100%;  
+    transform: perspective(200px) rotateX(25deg);  
+   }
+   #titlecontent {
+    position: absolute;
+    top: 10%;
+   }
+  
+   #titlecontent {   
+    animation: scroll 10s linear 4s infinite;  
+   }  
+   
+   @keyframes scroll {  
+    0%   { top: 100%; }  
+    100% { top: -150%; }  
+   } 
+
+   #contentEffect:after {  
+    position: absolute;  
+    content: ' ';  
+    left: 0;  
+    right: 0;  
+    top: 0;  
+    bottom: 60%;  
+    background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);  
+    pointer-events: none;  
+   } 
